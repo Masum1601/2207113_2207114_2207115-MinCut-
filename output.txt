@@ -1,0 +1,2 @@
+Mincut = 3
+Edges in Min Cut:
