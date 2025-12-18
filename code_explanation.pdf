@@ -1,0 +1,9 @@
+The code represents a graph using an edge structure that stores two connected vertices. It reads
+the number of vertices and edges from an input file and stores all edges so the original graph can
+be reused multiple times. A random number generator is used to randomly select edges during
+execution. In each run, a fresh copy of the graph is created, and vertices are repeatedly merged by
+selecting a random edge and combining its endpoints. During merging, all references to the
+removed vertex are replaced, and self-loop edges are discarded. This process continues until only
+two vertices remain. The number of remaining edges represents a possible cut of the graph. The
+program repeats this process several times and keeps track of the smallest cut found. Finally, it
+writes the minimum cut value and the corresponding edges to an output file.
